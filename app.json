@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/bookcase/bookcase",
+    "pages/person/person"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21272e",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#E31436",
+    "backgroundColor": "#2a313a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tab/tab2.png",
+        "selectedIconPath": "images/tab/tab2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "images/tab/tab4.png",
+        "selectedIconPath": "images/tab/tab4_4.png"
+
+      },
+      {
+        "pagePath": "pages/bookcase/bookcase",
+        "iconPath": "images/tab/tab1.png",
+        "selectedIconPath": "images/tab/tab1_1.png"
+  
+
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "images/tab/tab3.png",
+        "selectedIconPath": "images/tab/tab3_3.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

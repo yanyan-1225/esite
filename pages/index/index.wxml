@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="recommended">每天推荐为您一本好书</text>
+  <!-- <image src="/images/01.jpg"></image> -->
+   <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="book-name">三体：死神永生</view>
+      <view class="author">刘慈欣</view>
+    </view>
+</view>

@@ -1,0 +1,80 @@
+/* pages/home/home.wxss */
+@import "/icon/iconfont.wxss";
+
+.body{
+  color: #fff;
+}
+.bor{
+  border-bottom: 1px solid #888e9e;
+}
+.icon-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.icon-list icon{
+  font-size: 40rpx;
+  color: #fff;
+}
+.search-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rpx;
+}
+.search-input{
+  width: 100%;
+  padding: 32rpx 0;
+  background: #2d353d;
+  border-radius: 50rpx 50rpx;
+  text-indent: 40rpx;
+  margin-top: 40rpx;
+}
+.content{
+  color: #fff;
+}
+.content-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 48rpx 30rpx;
+}
+.classify{
+  font-size: 34rpx;
+  color: #fff;
+}
+.content-title .view{
+  font-size: 30rpx;
+  color: #888e9e;
+}
+.classify-img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.content-list{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+}
+.publish-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  margin-bottom: 80rpx;
+}
+.publish-list .publish-img{
+  width: 190rpx;
+  height: 300rpx;
+}
+.word{
+  font-size: 26rpx;
+  padding-top: 30rpx;
+  padding-bottom: 6rpx;
+}
+.author-name{
+  font-size: 24rpx;
+  color: #888e9e;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+}

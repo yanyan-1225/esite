@@ -1,0 +1,122 @@
+<!--pages/home/home.wxml-->
+<view class="body">
+  <view class="icon-list">
+    <icon class="icon iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-1"></icon>
+    <icon class="icon iconfont icon-gengduo1"></icon>
+  </view>
+  <view class="search-list">
+    <input class="search-input" maxlength="10" placeholder="搜索..." />
+  </view>
+  <view class="content">
+    <view class="content-title">
+      <span class="classify">分类排行</span>
+      <view class="view">查看全部
+        <icon class="icon iconfont icon-dayuhao"></icon>
+      </view>
+    </view>
+    <view class="content-list">
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_03.jpg" class="classify-img"></image>
+        </a>
+        <view>科幻</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_05.jpg" class="classify-img"></image>
+        </a>
+        <view>生活</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_07.jpg" class="classify-img"></image>
+        </a>
+        <view>露营</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_09.jpg" class="classify-img"></image>
+        </a>
+        <view>职场</view>
+      </view>
+    </view>
+  </view>
+   <view class="content">
+    <view class="content-title">
+      <span class="classify">作者排行</span>
+      <view class="view">查看全部
+        <icon class="icon iconfont icon-dayuhao"></icon>
+      </view>
+    </view>
+    <view class="content-list">
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_15.jpg" class="classify-img"></image>
+        </a>
+        <view>刘慈欣</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_16.jpg" class="classify-img"></image>
+        </a>
+        <view>田小花</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_14.jpg" class="classify-img"></image>
+        </a>
+        <view>马尔克斯</view>
+      </view>
+      <view class="content-list-item">
+        <a href="">
+          <image src="/images/home/home_17.jpg" class="classify-img"></image>
+        </a>
+        <view>余秋雨</view>
+      </view>
+    </view>
+  </view>
+  <view class="content-title">
+      <span class="classify">新发布</span>
+      <view class="view">查看全部
+        <icon class="icon iconfont icon-dayuhao"></icon>
+      </view>
+  </view>
+  <view class="publish-list">
+    <view class="publish-list-item">
+        <a href=""><image src="/images/01.jpg" class="publish-img"></image></a>
+        <view class="word">三体：死神永生</view>
+        <view class="author-name">刘慈欣</view>
+    </view>
+     <view class="publish-list-item">
+        <a href=""><image src="/images/02.jpg" class="publish-img"></image></a>
+        <view class="word">人类简史</view>
+        <view class="author-name">尤瓦尔·郝拉利</view>
+    </view>
+     <view class="publish-list-item">
+        <a href=""><image src="/images/03.jpg" class="publish-img"></image></a>
+        <view class="word">徐三观卖血记</view>
+        <view class="author-name">徐华</view>
+    </view>
+  </view>
+  <view class="publish-list">
+    <view class="publish-list-item">
+        <a href=""><image src="/images/home/home_22.jpg" class="publish-img"></image></a>
+        <view class="word">未来简史</view>
+        <view class="author-name">尤瓦尔·郝拉利</view>
+    </view>
+     <view class="publish-list-item">
+        <a href=""><image src="/images/home/home_24.jpg" class="publish-img"></image></a>
+        <view class="word">自私的基因</view>
+        <view class="author-name">理查德·道金斯</view>
+    </view>
+     <view class="publish-list-item">
+        <a href=""><image src="/images/home/home_26.jpg" class="publish-img"></image></a>
+        <view class="word">百年孤独</view>
+        <view class="author-name">马尔克斯</view>
+    </view>
+  </view>
+  <view class="btn">搜索</view>
+  <view class="btns" wx:key="key" style="color:{{item.color}} border:1px solid {{item.color}}" wx:for="{{btns}}">
+  {{item.message}}
+  </view>
+</view>
