@@ -1,4 +1,13 @@
 /**app.wxss**/
+@import "/icon/iconfont.wxss";
 page{
   background-color: #21272e;
+}
+.icon{
+  color: #fff;
+  font-size: 40rpx;
+}
+.icon-dayuhao{
+  font-size: 24rpx;
+  color: #888e9e;
 }

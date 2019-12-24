@@ -1,0 +1,33 @@
+<!--pages/science/science.wxml-->
+
+<view class="science">
+  <view class="icon-list">
+    <navigator><icon class="icon iconfont icon-flow"></icon></navigator>
+    <view style="font-size:42rpx;">科幻</view>
+    <icon class="icon iconfont icon-gengduo1"></icon>
+  </view>
+<!-- <scroll-view scroll-y='true' class='ranklistviewall'>
+    <block wx:for="{{ranklist}}" wx:key='{{index}}'>
+    </block>
+ </scroll-view> -->
+ <block wx:for="{{bookList}}" wx:key='{{index}}'>
+    <view class="bookList">
+          <navigator url='{{item.navTo}}'>
+            <view class="bookList-img">
+                <image src="{{item.imgUrl}}"></image>
+            </view>
+          </navigator>
+          <view class="bookList-item">
+            <view class="bookList-introduce">
+              <view class="bookList-title">
+                  <view class="bookList-name" style="font-size:36rpx;padding-bottom:4rpx;">{{item.name}}</view>
+                  <icon class="icon iconfont icon-gengduo"></icon>
+              </view>
+              <view class="bookList-author" style="font-size:26rpx;color:#5d637c;">作者：{{item.authorName}}</view>
+              <view class="bor"></view>
+              <view class="bookList-describe" style="color:#747b95;font-size:24rpx;">{{item.introduce}}</view>
+              </view>
+          </view>
+    </view>
+ </block>
+</view>

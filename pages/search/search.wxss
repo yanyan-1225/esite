@@ -1,1 +1,61 @@
 /* pages/search/search.wxss */
+.icon-list{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100rpx;
+}
+.search-content{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.search-content image{
+  width: 400rpx;
+  height: 600rpx;
+}
+.search-list{
+  width: 400rpx;
+  margin: 0 auto;
+}
+.name{
+  font-size:28rpx; 
+  color:rgb(101,106,123);
+  padding-top:10rpx;
+}
+.bor{
+  width: 400rpx;
+  height: 1rpx;
+  background-color: #2e3640;
+  margin-top: 70rpx;
+  margin-bottom: 40rpx;
+}
+.search-detail{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.search-detail-item{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.imgList{
+  width: 268rpx;
+  height: 400rpx;
+}
+
+.word{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 60rpx;
+  color: #fff;
+}
+
+
+
+
+

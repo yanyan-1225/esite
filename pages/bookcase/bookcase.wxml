@@ -1,2 +1,33 @@
 <!--pages/bookcase/bookcase.wxml-->
-<text>pages/bookcase/bookcase.wxml</text>
+<view class="bookcase">
+  <view class="icon-list">
+    <view></view>
+    <view style="font-size:42rpx;">书架</view>
+      <icon class="icon iconfont icon-gengduo1"></icon>
+    </view>
+  <view>
+  <view class="content-title">
+      <view>正在阅读</view>
+      <navigator>
+        <view class="introduce-view">查看全部
+          <icon class="icon iconfont icon-dayuhao"></icon>
+        </view>
+      </navigator>
+    </view>
+  </view>
+   <view class="bookcaseList">
+      <block wx:for="{{bookcaseList}}" wx:key="{{bookcaseList}}">
+            <navigator url='{{item.navTo}}'>
+              <view class='bookcase-detail-item' >
+                <image class='bookcase-img' src='{{item.imgSrc}}'></image>
+                <view class="word">{{item.name}}</view>
+              </view>
+            </navigator>
+      </block>
+    </view>
+    
+</view> 
+
+
+
+   

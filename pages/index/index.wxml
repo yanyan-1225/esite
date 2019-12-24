@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <text class="recommended">每天推荐为您一本好书</text>
-  <!-- <image src="/images/01.jpg"></image> -->
+  <image src="/images/01.jpg"></image>
    <view class="page-section page-section-spacing swiper">
       <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">

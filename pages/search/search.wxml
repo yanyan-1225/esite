@@ -1,2 +1,38 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="icon-list">
+  <view></view>
+  <view style="font-size:50rpx;">探索</view>
+  <view>
+    <icon class="icon icon-font icon-yingyong"></icon>
+  </view>
+</view>
+<block wx:if="{{true}}" >
+    <!-- <view class="search-content">
+    <view class="search-list">
+      <view>
+        <image src="/images/01.jpg"></image>
+      </view>
+      <view style="padding-top:30rpx;font-size:40rpx;">三体:死神永生</view>
+      <view class="name" >刘慈欣</view>
+      <view class="bor"></view>
+      <view style="color:#a2a8ba;">
+        <text>457</text>
+        <text>人已读</text>
+      </view>
+    </view>
+  </view>  -->
+  <view class='searchSecond'>
+    <view  class='search-detail' >
+      <block wx:for="{{searchSecond}}" wx:key="{{searchSecond}}">
+            <navigator url='{{item.navTo}}'>
+              <view class='search-detail-item' >
+                <image class='imgList' src='{{item.imageSrc}}'></image>
+                <view class="word">{{item.title}}</view>
+              </view>
+            </navigator>
+      </block>
+    </view>
+  </view>
+</block>
+
+

@@ -1,8 +1,28 @@
 /* pages/home/home.wxss */
-@import "/icon/iconfont.wxss";
+
 
 .body{
   color: #fff;
+}
+.introduce{
+  display: flex;
+  justify-content: space-between;
+  padding: 48rpx 30rpx;
+  align-items: center;
+}
+.introduce-start{
+  font-size: 34rpx;
+  color: #fff;
+}
+.introduce .introduce-view{
+  font-size: 30rpx;
+  color: #888e9e;
+  position: relative;
+  top: -5rpx;
+}
+.introduce .introduce-view .icon{
+  font-size: 30rpx;
+  color: #888e9e;
 }
 .bor{
   border-bottom: 1px solid #888e9e;
@@ -25,34 +45,9 @@
   width: 100%;
   padding: 32rpx 0;
   background: #2d353d;
+  padding-left: 40rpx;
   border-radius: 50rpx 50rpx;
-  text-indent: 40rpx;
   margin-top: 40rpx;
-}
-.content{
-  color: #fff;
-}
-.content-title{
-  display: flex;
-  justify-content: space-between;
-  padding: 48rpx 30rpx;
-}
-.classify{
-  font-size: 34rpx;
-  color: #fff;
-}
-.content-title .view{
-  font-size: 30rpx;
-  color: #888e9e;
-}
-.classify-img{
-  width: 160rpx;
-  height: 160rpx;
-}
-.content-list{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 30rpx;
 }
 .publish-list{
   display: flex;
@@ -64,17 +59,90 @@
   width: 190rpx;
   height: 300rpx;
 }
-.word{
-  font-size: 26rpx;
-  padding-top: 30rpx;
-  padding-bottom: 6rpx;
-}
 .author-name{
   font-size: 24rpx;
   color: #888e9e;
 }
-.btns{
-  display: flex;
-  justify-content: space-between;
+.btn{
   padding-left: 30rpx;
+  font-size: 34rpx;
+  padding-bottom: 50rpx;
+}
+.btns{
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  border-radius: 40rpx;
+  padding: 10rpx 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.imgList{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 190rpx;
+  height: 300rpx;
+  margin-bottom: 10rpx;
+}
+
+
+
+.introduceList,.introduceList_middle{
+  padding-left: 30rpx;
+}
+.introduce-detail{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.introduce-detail-item{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+.imgList{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.word{
+  font-size: 30rpx;
+  margin-top: 6rpx;
+}
+
+.bookList{
+  display: flex;
+  padding: 0 30rpx;
+  background: #2b323b;
+  border-radius: 30rpx 30rpx;
+  margin-top: 90rpx;
+  position: relative;
+}
+.bookList-img image{
+  width: 170rpx;
+  height: 250rpx;
+  position: relative;
+  top: -30rpx;
+}
+.bookList-item{
+  padding-left: 30rpx;
+  padding-top: 28rpx;
+}
+.bookList-title{
+  display: flex;
+}
+/* .icon-gengduo{
+  color:#969baf;
+  position: absolute;
+  right: 30rpx;
+
+} */
+.bor{
+  width: 330rpx;
+  height: 1rpx;
+  background-color: #53596f;
+  margin-top: 24rpx;
+  margin-bottom: 15rpx;
 }

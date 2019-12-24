@@ -1,0 +1,43 @@
+/* pages/science/science.wxss */
+.science{
+  padding: 0 40rpx;
+  color:#fff;
+}
+.science .icon-list{
+  display: flex;
+  justify-content: space-between;
+}
+.bookList{
+  display: flex;
+  padding: 0 30rpx;
+  background: #2b323b;
+  border-radius: 30rpx 30rpx;
+  margin-top: 90rpx;
+  position: relative;
+}
+.bookList-img image{
+  width: 170rpx;
+  height: 250rpx;
+  position: relative;
+  top: -30rpx;
+}
+.bookList-item{
+  padding-left: 30rpx;
+  padding-top: 28rpx;
+}
+.bookList-title{
+  display: flex;
+}
+.icon-gengduo{
+  color:#969baf;
+  position: absolute;
+  right: 30rpx;
+
+}
+.bor{
+  width: 330rpx;
+  height: 1rpx;
+  background-color: #53596f;
+  margin-top: 24rpx;
+  margin-bottom: 15rpx;
+}

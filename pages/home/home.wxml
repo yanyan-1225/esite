@@ -7,79 +7,56 @@
   <view class="search-list">
     <input class="search-input" maxlength="10" placeholder="搜索..." />
   </view>
-  <view class="content">
-    <view class="content-title">
-      <span class="classify">分类排行</span>
-      <view class="view">查看全部
+  <view class="introduce">
+    <span class="introduce-start">分类排行</span>
+      <view class="introduce-view">查看全部
         <icon class="icon iconfont icon-dayuhao"></icon>
       </view>
-    </view>
-    <view class="content-list">
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_03.jpg" class="classify-img"></image>
-        </a>
-        <view>科幻</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_05.jpg" class="classify-img"></image>
-        </a>
-        <view>生活</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_07.jpg" class="classify-img"></image>
-        </a>
-        <view>露营</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_09.jpg" class="classify-img"></image>
-        </a>
-        <view>职场</view>
-      </view>
+  </view>
+
+  <view class='introduceList'>
+    <view  class='introduce-detail' >
+    <swiper display-multiple-items="4" style="width:100%;">
+      <block wx:for="{{introduceList}}" wx:key="{{introduceList}}">
+        <swiper-item style="width:25%;">
+            <navigator url='{{item.navTo}}'>
+              <view class='introduce-detail-item' >
+                <image class='imgList' src='{{item.imageSrc}}'></image>
+                <view class="word">{{item.title}}</view>
+              </view>
+            </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
     </view>
   </view>
-   <view class="content">
-    <view class="content-title">
-      <span class="classify">作者排行</span>
-      <view class="view">查看全部
+  <view class="introduce">
+    <span class="introduce-start">作者排行</span>
+      <view class="introduce-view">查看全部
         <icon class="icon iconfont icon-dayuhao"></icon>
-      </view>
-    </view>
-    <view class="content-list">
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_15.jpg" class="classify-img"></image>
-        </a>
-        <view>刘慈欣</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_16.jpg" class="classify-img"></image>
-        </a>
-        <view>田小花</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_14.jpg" class="classify-img"></image>
-        </a>
-        <view>马尔克斯</view>
-      </view>
-      <view class="content-list-item">
-        <a href="">
-          <image src="/images/home/home_17.jpg" class="classify-img"></image>
-        </a>
-        <view>余秋雨</view>
-      </view>
     </view>
   </view>
-  <view class="content-title">
-      <span class="classify">新发布</span>
-      <view class="view">查看全部
+  <view class='introduceList_middle'>
+    <view  class='introduce-detail' >
+    <swiper display-multiple-items="4" style="width:100%;">
+      <block wx:for="{{introduceList_middle}}" wx:key="{{introduceList_middle}}">
+        <swiper-item style="width:25%;">
+            <navigator url='{{item.navTo}}'>
+              <view class='introduce-detail-item' >
+                <image class='imgList' src='{{item.imageSrc}}'></image>
+                <view class="word">{{item.title}}</view>
+              </view>
+            </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+    </view>
+  </view>
+  <view class="introduce">
+    <span class="introduce-start">新发布</span>
+      <view class="introduce-view">查看全部
         <icon class="icon iconfont icon-dayuhao"></icon>
-      </view>
+    </view>
   </view>
   <view class="publish-list">
     <view class="publish-list-item">
@@ -116,7 +93,45 @@
     </view>
   </view>
   <view class="btn">搜索</view>
-  <view class="btns" wx:key="key" style="color:{{item.color}} border:1px solid {{item.color}}" wx:for="{{btns}}">
+  <view class="btns" wx:for="{{btns}}" wx:key="key" style="color:{{item.color}}; border:1px solid {{item.color}}" >
   {{item.message}}
   </view>
+  <view class="introduce">
+    <span class="introduce-start">热销榜</span>
+      <view class="introduce-view">查看全部
+        <icon class="icon iconfont icon-dayuhao"></icon>
+    </view>
+  </view>
+  
+  <view class='introduceList'>
+    <view  class='introduce-detail' >
+    <swiper style="width:100%;">
+      <block wx:for="{{bookList}}" wx:key='{{index}}'>
+        <swiper-item>
+            <view class="bookList">
+            <navigator url='{{item.navTo}}'>
+                <view class="bookList-img">
+                    <image src="{{item.imgUrl}}"></image>
+                </view>
+            </navigator>
+            <view class="bookList-item">
+                  <view class="bookList-introduce">
+                    <view class="bookList-title">
+                        <view class="bookList-name" style="font-size:36rpx;padding-bottom:4rpx;">{{item.name}}</view>
+                        <icon class="icon iconfont icon-gengduo"></icon>
+                    </view>
+                    <view class="bookList-author" style="font-size:26rpx;color:#5d637c;">作者：{{item.authorName}}</view>
+                    <view class="bor"></view>
+                    <view class="bookList-describe" style="color:#747b95;font-size:24rpx;">{{item.introduce}}</view>
+                  </view>
+            </view>
+        </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    </view>
+  </view>
+ 
+
+
 </view>

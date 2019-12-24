@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    searchSecond: [
+      { "title": "三体：死神永生", "imageSrc": "/images/search1.jpg" },
+      { "title": "百年孤独", "imageSrc": "/images/home/home_26.jpg" },
+      { "title": "平凡的世界", "imageSrc": "/images/search2.jpg" },
+      { "title": "未来简史", "imageSrc": "/images/home/home_22.jpg" },
+    ],
   },
 
   /**

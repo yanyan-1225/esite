@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bookcaseList:[
+      {"imgSrc":"/images/01.jpg","name":"三体:死神永生"},
+      { "imgSrc": "/images/02.jpg", "name": "人类简史" },
+      { "imgSrc": "/images/03.jpg", "name": "徐三观卖血记" }
+    ]
   },
 
   /**
