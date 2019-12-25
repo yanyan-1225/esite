@@ -1,0 +1,72 @@
+/* pages/bookIntro/bookIntro.wxss */
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx;
+}
+/* .bookIntro{
+  padding-left: 40rpx;
+} */
+.bookIntro .icon{
+  font-size: 42rpx;
+}
+/* .icon-aixin{
+  color:#21272e
+} */
+.bookTop{
+  margin: 40rpx 0;
+
+}
+.bookTop .bookName{
+  font-size: 50rpx;
+  color: #fff;
+}
+#bookMsg{
+  padding-left: 35rpx;
+}
+.bookAuthor{
+  color:#828d9a;
+  font-size:32rpx;
+  padding: 28rpx 0;
+}
+.bookImage{
+  width: 220rpx;
+  height: 320rpx;
+}
+.cor{
+  color:#71768c;
+}
+.bookIntro .icon-xing{
+  display: inline-flex;
+  color: #fb6894;
+}
+.bor{
+  height: 1rpx;
+  background-color:#71768c;
+  margin-left: 40rpx;
+  margin-top: 45rpx;
+  margin-bottom: 45rpx;
+}
+.bookIntro-header{
+  font-size: 36rpx;
+  color: #fff;
+  padding: 50rpx 0;
+}
+.comments{
+  display: inline-flex;
+  color: #007aff;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+}
+.miniImg{
+  width: 60rpx;
+  height: 60rpx;
+  padding-right: 20rpx;
+}
+.commentsList{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+}

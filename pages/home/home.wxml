@@ -5,7 +5,7 @@
     <icon class="icon iconfont icon-gengduo1"></icon>
   </view>
   <view class="search-list">
-    <input class="search-input" maxlength="10" placeholder="搜索..." />
+    <input class="search-input" bindblur="searchBlur" maxlength="10" placeholder="搜索..." />
   </view>
   <view class="introduce">
     <span class="introduce-start">分类排行</span>

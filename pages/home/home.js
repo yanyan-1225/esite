@@ -132,5 +132,8 @@ Page({
       // 收起键盘
       wx.hideKeyboard()
     }
+  },
+  searchBlur: function (e) {
+    console.log(e)
   }
 })

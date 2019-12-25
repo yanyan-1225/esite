@@ -2,7 +2,7 @@
 
 <view class="science">
   <view class="icon-list">
-    <navigator><icon class="icon iconfont icon-flow"></icon></navigator>
+    <navigator ><icon class="icon iconfont icon-flow"></icon></navigator>
     <view style="font-size:42rpx;">科幻</view>
     <icon class="icon iconfont icon-gengduo1"></icon>
   </view>

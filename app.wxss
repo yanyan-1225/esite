@@ -11,3 +11,10 @@ page{
   font-size: 24rpx;
   color: #888e9e;
 }
+.iconList{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}

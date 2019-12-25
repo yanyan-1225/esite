@@ -1,2 +1,12 @@
 <!--pages/person/person.wxml-->
-<text>pages/person/person.wxml</text>
+<view class="person">
+
+<view class="iconList">
+  <view></view>
+  <view style="font-size:42rpx;">我的</view>
+  <view>
+    <navigator><icon class="icon iconfont icon-shezhi"></icon></navigator>
+  </view>
+</view>
+
+</view>

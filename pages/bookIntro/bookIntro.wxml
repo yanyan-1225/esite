@@ -1,0 +1,75 @@
+<!--pages/bookIntro/bookIntro.wxml-->
+<view class="bookIntro">
+  <view class="bookTop wrapper">
+      <navigator>
+        <image class="bookImage" src="/images/01.jpg"></image>
+      </navigator>
+      <view id="bookMsg">
+        <view class="bookName">三体：死神永生</view>
+        <view class="bookAuthor">作者：刘慈欣</view>
+        <view class="cor" style="font-size:26rpx;">刘慈欣创作的系列长篇科幻小说地球往事三部曲的第三部作品...</view>
+        <view style="padding-top:10rpx;">
+          <icon class="icon iconfont icon-xing"></icon>
+          <icon class="icon iconfont icon-xing"></icon>
+          <icon class="icon iconfont icon-xing"></icon>
+          <icon class="icon iconfont icon-xing"></icon>
+          <icon class="icon iconfont icon-xing"></icon>
+          <text style="color:#c8a33d;">5.0</text>
+        </view>
+      </view>
+  </view>
+  <view class="bor"></view>
+  <view class="wrapper" style="color:#fff;">
+    <view>
+      <icon class="icon iconfont icon-aixin" style="color:#ec392f;"></icon>
+      <text>收藏</text>
+    </view>
+    <view>
+      <icon class="icon iconfont icon-fenxiang cor"></icon>
+      <text>分享</text>
+    </view>
+    <view>
+      <icon class="icon iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-2 cor"></icon>
+      <text>放入书架</text>
+    </view>
+  </view>
+  <view class="bookIntro-title wrapper">
+        <view class="bookIntro-header">详情</view>
+  </view>
+  <view class="wrapper cor">与三体文明的战争使人类第一次见到了宇宙黑暗的真相，地球文明像一个恐惧的孩子，熄灭了寻火的篝火，在暗夜中发抖。自以为历经沧桑，其实刚刚蹒跚学步；自以为悟出了生存竞争的秘密，其实还远没有竞争的资格</view>
+  <view class="bookIntro-title wrapper">
+        <view class="bookIntro-header">查看目录</view>
+        <navigator>
+            <icon class="icon iconfont icon-dayuhao"></icon>
+        </navigator>
+  </view>
+  <view class="bookIntro-title wrapper">
+    <view>
+      <text class="bookIntro-header">评论</text>
+      <text class="comments">215条评论</text>
+    </view>
+    <navigator>
+        <icon class="icon iconfont icon-edit3-fill"></icon>
+    </navigator>
+  </view>
+  <view class="commentsList">
+    <view><image class="miniImg" src="/images/y1.jpg"></image></view>
+    <view>
+      <view style="color:#fff;">你个废物</view>
+      <view class="cor">大刘塑造的女性都具有圣母的特质，但是本质上弱爆了。叶是文革的毒瘤，庄是定制禁脔，程最经典——站在圣母和傻逼的微笑曲线上。大刘塑造的男性都带有明显的缺陷但本质上极端人性化。一身痞气小人物大使，最高情商让他活的明白；罗辑荒唐和不羁让他成了救世主，但也决定了他必不能善终；软弱怯懦固执的云天明，也并无理由因为慷慨和运气就得到爱啊。但我真心理解这样的人，这样的性格，这样的命运。</view>
+      <!-- <view>
+        <view>2019-12-25</view>
+        <view>
+          <view>
+            <icon class="icon iconfont icon-aixin"></icon>
+            <text>134</text>
+          </view>
+          <view>
+            <icon class="icon iconfont icon-pinglun"></icon>
+            <text>89</text>
+          </view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>

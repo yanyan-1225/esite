@@ -4,15 +4,23 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
@@ -73,6 +81,20 @@
 					"id": -1,
 					"name": "pages/science/science",
 					"pathName": "pages/science/science",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/person/person",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bookIntro/bookIntro",
+					"pathName": "pages/bookIntro/bookIntro",
 					"scene": null
 				}
 			]

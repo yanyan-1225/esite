@@ -6,7 +6,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/bookcase/bookcase",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/bookIntro/bookIntro"
     
 
   ],

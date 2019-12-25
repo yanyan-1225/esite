@@ -133,12 +133,12 @@
 .bookList-title{
   display: flex;
 }
-/* .icon-gengduo{
+.icon-gengduo{
   color:#969baf;
   position: absolute;
   right: 30rpx;
 
-} */
+}
 .bor{
   width: 330rpx;
   height: 1rpx;
